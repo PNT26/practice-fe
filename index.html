@@ -14,12 +14,27 @@
             <li class="hover:font-bold hover:underline hover:underline-offset-[8px] cursor-pointer">Home</li>
             <li class="hover:font-bold hover:underline hover:underline-offset-[8px] cursor-pointer">About</li>
             <li class="font-bold underline underline-offset-[8px] cursor-pointer">Shop</li>
-            <li class="hover:font-bold hover:underline hover:underline-offset-[8px] cursor-pointer">Cart</li>
+            <li id="cart-button" class="relative flex justify-center items-center rounded-[8px] w-[40px] h-[40px] bg-[#0080ff] text-white cursor-pointer">
+                <span class="material-symbols-outlined">
+                    shopping_cart
+                </span>
+                <span id="cart-count" class="cart-count w-[16px] h-[16px] bg-[#ff3500] text-white absolute top-[-4px] right-[-4px] rounded-full text-[10px]"></span>
+            </li>
+            <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
         </ul>
     </nav>
-    <main>
-        <div class="products">
-            <img src="" alt="image">
+    <main class="relative px-[40px] py-[20px]">
+        <!-- <div class="product-section px-[40px] py-[20px] flex flex-row justify-between">
+            <div class="product-section-details w-[50%]">
+                <img src="https://asmpa.selise.cloud/1707465302_90c1e4382c85c728167579a72c08d4_headphone.jpeg" alt="img" width="100%" class="product-image">
+                <div class="py-[20px]">
+                    <h2 class="product-name border-b border-black/10 pb-[20px] mb-[20px]"></h2>
+                    <p class="product-description"></p>
+                </div>
+            </div>
+        </div> -->
+
+        <div id="cart-container" class="cart-container">
         </div>
     </main>
     <script src="index.js"></script>
